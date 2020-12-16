@@ -1,0 +1,40 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex .div, .flex .canvas {
+    margin: 5px;
+}
+
+.tab {
+    float: left;
+    padding: 2px 5px;
+    border-bottom: 1px solid #555;
+    background-color: #DDD;
+    cursor: pointer;
+}
+
+.tab.active {
+    border: 1px solid #555;;
+    border-bottom: none;
+    background-color: white;
+}
+
+#formula {
+    padding-top: 20px;
+    border: 1px solid #555;;
+}
+
+#app-controls {
+    margin: 5px;
+}
+
+.slider-red::-webkit-slider-thumb,   .slider-red::-moz-range-thumb {
+    background: red; 
+ }
+  
+ .display-none {
+    display: none;
+ }
