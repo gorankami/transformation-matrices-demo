@@ -25,16 +25,29 @@
 #formula {
     padding-top: 20px;
     border: 1px solid #555;;
+    min-width: 330px;
+}
+
+.slider {
+    min-width: 300px;
 }
 
 #app-controls {
     margin: 5px;
 }
-
-.slider-red::-webkit-slider-thumb,   .slider-red::-moz-range-thumb {
-    background: red; 
- }
   
  .display-none {
     display: none;
  }
+
+ .blue {
+     color: blue;
+ }
+
+ .red {
+    color: red;
+}
+
+input[type="button"] {
+    margin: 5px;
+}

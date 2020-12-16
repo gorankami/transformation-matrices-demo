@@ -12,9 +12,6 @@
 <body>
     <div class="flex">
 
-        <canvas width="500" height="300">
-            Your browser does not support canvas.
-        </canvas>
         <div id="app-controls">
             <div>
                 <span class="tab active" onclick="onClickTab(0)">Translation</span>
@@ -24,23 +21,31 @@
 
             <div id="formula"></div>
             <div class="slide-group" id="slide-group-0">
-                <input type="range" min="-30" max="30" value="0" class="slider slider-blue" onchange="onChangeSlider('tx')" id="slider-tx">
-                <input type="range" min="-15" max="15" value="0" class="slider slider-red" onchange="onChangeSlider('ty')" id="slider-ty">
+                <span class="blue">tx</span>
+                <input type="range" min="-5" max="5" value="0" class="slider" oninput="onChangeSlider('tx')"
+                    id="slider-tx"><br />
+                <span class="red">ty</span> <input type="range" min="-5" max="5" value="0" class="slider"
+                    oninput="onChangeSlider('ty')" id="slider-ty">
             </div>
             <div class="slide-group display-none" id="slide-group-1">
-                <input type="range" min="-360" max="360" value="0" class="slider slider-blue" onchange="onChangeSlider('theta')" id="slider-theta">
+                <span class="blue">theta</span> <input type="range" min="-360" max="360" value="0" class="slider"
+                    oninput="onChangeSlider('theta')" id="slider-theta">
             </div>
             <div class="slide-group display-none" id="slide-group-2">
-                <input type="range" min="0" max="3" value="1" step="0.1" class="slider slider-blue" onchange="onChangeSlider('sx')" id="slider-sx">
-                <input type="range" min="0" max="2" value="1" step="0.1" class="slider slider-red" onchange="onChangeSlider('sy')" id="slider-sy">
+                <span class="blue">sx</span> <input type="range" min="0" max="3" value="1" step="0.25" class="slider"
+                    oninput="onChangeSlider('sx')" id="slider-sx"><br />
+                <span class="red">sy</span> <input type="range" min="0" max="2" value="1" step="0.25" class="slider"
+                    oninput="onChangeSlider('sy')" id="slider-sy">
             </div>
             <input type="button" value="Apply" onclick="onClickApply()" />
             <input type="button" value="Reset" onclick="onClickReset()" />
+            <pre id="rect-coords"></pre>
         </div>
+
+        <canvas id="coord-system" width="500" height="300">
+            Your browser does not support canvas.
+        </canvas>
     </div>
-    <script src="texStrings.js"></script>
-    <script src="matrixTransformation.js"></script>
-    <script src="canvasDrawing.js"></script>
     <script src="app-transformation-matrices-demo.js"></script>
 </body>
 
