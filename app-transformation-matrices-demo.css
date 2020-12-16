@@ -1,10 +1,10 @@
-.flex {
+.app {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.flex .div, .flex .canvas {
+.app .div, .app .canvas {
     margin: 5px;
 }
 
