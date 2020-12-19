@@ -14,12 +14,13 @@
     border-bottom: 1px solid #555;
     background-color: #DDD;
     cursor: pointer;
+    color: black;
 }
 
 .tab.active {
     border: 1px solid #555;;
     border-bottom: none;
-    background-color: white;
+    background-color: inherit;
 }
 
 #formula {
